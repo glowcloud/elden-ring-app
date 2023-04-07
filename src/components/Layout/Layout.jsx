@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <Box width="100%" display="flex" flexDirection="column" >
+    <Box width="100%" display="flex" flexDirection="column">
       <Header setIsSidebarOpen={setIsSidebarOpen} />
       <Sidebar isOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
       {/* <StyledPage> */}

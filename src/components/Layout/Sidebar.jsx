@@ -37,8 +37,17 @@ const Sidebar = ({ isOpen, setIsSidebarOpen }) => {
   const navigate = useNavigate();
 
   return (
-    <Drawer anchor="left" open={isOpen} onClose={() => setIsSidebarOpen(false)}>
-      <Box w={250} onClick={() => setIsSidebarOpen(false)}>
+    <Drawer
+      anchor="left"
+      open={isOpen}
+      onClose={() => setIsSidebarOpen(false)}
+      sx={{
+        "& .MuiDrawer-paper": {
+          width: "200px",
+        },
+      }}
+    >
+      <Box w={200} onClick={() => setIsSidebarOpen(false)}>
         <List>
           {pages.map((page) => (
             <ListItem key={page.name} disablePadding>

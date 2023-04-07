@@ -34,7 +34,8 @@ const GridCard = ({ item, path }) => {
               backgroundColor: "#485461",
               backgroundImage:
                 "linear-gradient(315deg, #485461 0%, #28313b 74%)",
-              height: "305px",
+              height: "332px",
+              width: "100%",
             }}
           />
           <Divider />

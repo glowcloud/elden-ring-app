@@ -31,8 +31,7 @@ const Category = () => {
       <Grid
         container
         spacing={2}
-        marginLeft={0}
-        px="5rem"
+        px={{ xs: "2rem", md: "5rem" }}
         display="flex"
         alignItems="stretch"
         justifyContent="center"

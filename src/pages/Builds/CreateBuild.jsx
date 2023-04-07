@@ -91,7 +91,7 @@ const CreateBuild = () => {
   };
 
   return (
-    <Box mx={{ sm: 2, md: 10 }} my={2}>
+    <Box mx={{ xs: 2, sm: 2, md: 10 }} my={2}>
       <CustomBreadcrumbs category="builds" name="Create" />
       <Paper sx={{ p: 2, mt: 1 }}>
         {isLoadingData && (

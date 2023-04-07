@@ -17,13 +17,15 @@ const StatsStep = ({ control, setValue, getValues, classes, currentClass }) => {
       <Typography gutterBottom variant="h5">
         Name
       </Typography>
-      <TextInput
-        name="root.buildName"
-        control={control}
-        label="Build Name"
-        defaultValue=""
-        required={true}
-      />
+      <Box width={{xs: "100%", md: "500px"}}>
+        <TextInput
+          name="root.buildName"
+          control={control}
+          label="Build Name"
+          defaultValue=""
+          required={true}
+        />
+      </Box>
 
       <Typography gutterBottom variant="h5" sx={{ pt: 2 }}>
         Stats
@@ -31,14 +33,16 @@ const StatsStep = ({ control, setValue, getValues, classes, currentClass }) => {
 
       {/* CLASS SELECTOR */}
       {classes && (
-        <SelectInput
-          name="root.classSelect"
-          control={control}
-          label="Class"
-          defaultValue={""}
-          values={classes}
-          classSelect={true}
-        />
+        <Box width={{xs: "100%", md: "300px"}}>
+          <SelectInput
+            name="root.classSelect"
+            control={control}
+            label="Class"
+            defaultValue={""}
+            values={classes}
+            classSelect={true}
+          />
+        </Box>
       )}
       {/* DEFAULT / MIN VALUES BASED ON SELECTED CLASS */}
       {currentClass >= 0 && (

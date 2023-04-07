@@ -26,7 +26,7 @@ const Builds = () => {
 
   return (
     <Box>
-      <Grid container spacing={2} marginLeft={0} px="5rem">
+      <Grid container spacing={2} px={{ xs: "2rem", md: "5rem" }}>
         {/* BREADCRUMBS */}
         <Grid item xs={12}>
           <CustomBreadcrumbs category={"builds"} />
@@ -34,10 +34,9 @@ const Builds = () => {
 
         {/* SEARCH HERE */}
 
-
         {!isLoading && (
           <Grid item xs={12}>
-            <List sx={{ mx: 2 }}>
+            <List>
               {items?.length > 0 &&
                 items.map((item) => (
                   <ListItem key={item._id}>

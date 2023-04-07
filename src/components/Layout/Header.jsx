@@ -10,7 +10,7 @@ const Header = ({ setIsSidebarOpen }) => {
   const { logout } = useLogout();
 
   return (
-    <AppBar sx={{ backgroundColor: "#323d49" }}>
+    <AppBar sx={{ backgroundColor: "#323d49", height: "4rem" }}>
       <Toolbar>
         <IconButton
           size="large"
@@ -24,7 +24,12 @@ const Header = ({ setIsSidebarOpen }) => {
         >
           <Menu />
         </IconButton>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography
+          variant="h6"
+          component="div"
+          sx={{ flexGrow: 1 }}
+          visibility={{ xs: "hidden", md: "visible" }}
+        >
           Elden Ring Companion
         </Typography>
         {user && (

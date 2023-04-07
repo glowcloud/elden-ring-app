@@ -40,7 +40,7 @@ const EquipmentStep = ({
       <Grid container spacing={1} justify="space-between" alignItems="stretch">
         {weapons &&
           rightWeaponSlots.map((slot, index) => (
-            <Grid item key={index} md={12} flexGrow={1}>
+            <Grid item key={index} xs={12} md={12} flexGrow={1}>
               <Box
                 display="flex"
                 justifyContent="space-between"

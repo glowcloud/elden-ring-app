@@ -15,6 +15,7 @@ const TextInput = ({ name, control, label, defaultValue, required, type }) => {
           sx={{ label: { color: "text.primary" } }}
           required={required}
           type={type ? type : "text"}
+          fullWidth
         />
       )}
     />

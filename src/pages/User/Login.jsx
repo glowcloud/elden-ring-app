@@ -37,7 +37,7 @@ const Login = () => {
   };
 
   return (
-    <Box mx={{ sm: 2, md: 10 }} my={2}>
+    <Box mx={{ xs: 2, sm: 2, md: 10 }} my={2}>
       <Paper sx={{ p: 2, mt: 1 }}>
         <form autoComplete="off">
           <Box
@@ -47,7 +47,7 @@ const Login = () => {
             flexDirection="column"
             py={2}
           >
-            <Box my={2}>
+            <Box my={2} width={{ xs: "100%", md: "300px" }}>
               <TextInput
                 name="email"
                 control={control}
@@ -57,14 +57,16 @@ const Login = () => {
                 type="email"
               />
             </Box>
-            <TextInput
-              name="password"
-              control={control}
-              label="Password"
-              defaultValue=""
-              required={true}
-              type="password"
-            />
+            <Box my={2} width={{ xs: "100%", md: "300px" }}>
+              <TextInput
+                name="password"
+                control={control}
+                label="Password"
+                defaultValue=""
+                required={true}
+                type="password"
+              />
+            </Box>
           </Box>
 
           {/* ERRORS */}
