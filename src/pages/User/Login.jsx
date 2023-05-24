@@ -70,14 +70,14 @@ const Login = () => {
           </Box>
 
           {/* ERRORS */}
-          {loginError && (
+          {isLogin && loginError && (
             <Box>
               <Typography align="center" color="error">
-                {loginError}
+                Incorrect email or password
               </Typography>
             </Box>
           )}
-          {signupError && (
+          {!isLogin && signupError && (
             <Box>
               <Typography align="center" color="error">
                 {signupError}

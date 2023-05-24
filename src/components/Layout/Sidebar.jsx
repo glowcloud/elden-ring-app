@@ -12,6 +12,7 @@ import {
 import { useNavigate } from "react-router-dom";
 
 const pages = [
+  { name: "Home", path: "/" },
   { name: "Ammos", path: "/ammos" },
   { name: "Armors", path: "/armors" },
   { name: "Ashes of War", path: "/ashes" },
@@ -44,6 +45,7 @@ const Sidebar = ({ isOpen, setIsSidebarOpen }) => {
       sx={{
         "& .MuiDrawer-paper": {
           width: "200px",
+          mt: 8,
         },
       }}
     >
@@ -58,7 +60,6 @@ const Sidebar = ({ isOpen, setIsSidebarOpen }) => {
             </ListItem>
           ))}
         </List>
-        <Divider />
       </Box>
     </Drawer>
   );
