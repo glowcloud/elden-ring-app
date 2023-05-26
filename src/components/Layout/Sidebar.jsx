@@ -1,11 +1,9 @@
 import {
   Box,
-  Divider,
   Drawer,
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
 } from "@mui/material";
 
@@ -54,7 +52,6 @@ const Sidebar = ({ isOpen, setIsSidebarOpen }) => {
           {pages.map((page) => (
             <ListItem key={page.name} disablePadding>
               <ListItemButton onClick={() => navigate(page.path)}>
-                {/* <ListItemIcon>{page.icon}</ListItemIcon> */}
                 <ListItemText primary={page.name} />
               </ListItemButton>
             </ListItem>

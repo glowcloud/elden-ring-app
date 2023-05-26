@@ -5,7 +5,6 @@ import SelectInput from "../Inputs/SelectInput";
 
 const ItemsStep = ({ control, items, spirits }) => {
   const allItems = items
-    // .filter((item) => item.type === "Reusable")
     .concat(spirits)
     .sort((a, b) => a.name.localeCompare(b.name));
   const itemSlots = new Array(10).join(".").split(".");
@@ -22,9 +21,7 @@ const ItemsStep = ({ control, items, spirits }) => {
         Items
       </Typography>
 
-      <Grid
-        container spacing={1} justify="space-between" alignItems="stretch"
-      >
+      <Grid container spacing={1} justify="space-between" alignItems="stretch">
         {allItems &&
           itemSlots.map((slot, index) => (
             <Grid item key={index} sm={12} md={6} flexGrow={1}>

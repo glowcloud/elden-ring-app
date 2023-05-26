@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import { Typography, Grid, Divider } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 
 import SelectInput from "../Inputs/SelectInput";
 
