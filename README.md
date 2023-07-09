@@ -1,4 +1,4 @@
-# Elden Ring Companion 
+# [Elden Ring Companion](https://elden-ring-companion.vercel.app)
 
 A website collecting information about various items, bosses, locations, etc. from the video game Elden Ring. Allows for crafting your own builds through choosing character attributes and equipment.
 
