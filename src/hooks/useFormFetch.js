@@ -1,17 +1,17 @@
 import useFetch from "./useFetch";
 
 const useFormFetch = () => {
-  const { data: classes, isLoading: isLoadingClasses } = useFetch("classes");
-  const { data: ammos, isLoading: isLoadingAmmos } = useFetch("ammos");
-  const { data: ashes, isLoading: isLoadingAshes } = useFetch("ashes");
-  const { data: shields, isLoading: isLoadingShields } = useFetch("shields");
+  const { data: classes, isLoading: isLoadingClasses } = useFetch("classes?limit=100");
+  const { data: ammos, isLoading: isLoadingAmmos } = useFetch("ammos?limit=100");
+  const { data: ashes, isLoading: isLoadingAshes } = useFetch("ashes?limit=100");
+  const { data: shields, isLoading: isLoadingShields } = useFetch("shields?limit=100");
   const { data: talismans, isLoading: isLoadingTalismans } =
-    useFetch("talismans");
+    useFetch("talismans?limit=100");
   const { data: incantations, isLoading: isLoadingIncantations } =
-    useFetch("incantations");
+    useFetch("incantations?limit=100");
   const { data: sorceries, isLoading: isLoadingSorceries } =
-    useFetch("sorceries");
-  const { data: spirits, isLoading: isLoadingSpirits } = useFetch("spirits");
+    useFetch("sorceries?limit=100");
+  const { data: spirits, isLoading: isLoadingSpirits } = useFetch("spirits?limit=100");
 
   const { data: items0, isLoading: isLoadingItems0 } =
     useFetch(`items?limit=100`);
